@@ -1,0 +1,39 @@
+
+<% include ../partials/header %>
+
+
+<div class="wrapper-content">
+	<div class="container" >
+		<div class="form">
+
+
+
+    <div class="container">
+      <img class="img-box" src="<%= order.image %>">
+      <div id="featured" class="margin-btm">
+        <h4>RUB:<%= order.cost %></h4>
+        <h4>Name:<a><%=order.name%></a></h4>
+        <p>Category: <%= order.category %></p>
+        <p>Description:<%= order.description %></p>
+        <p>
+          <h3 >Submitted by: <a  style="text-decoration: none;" href="/users/<%= order.author.id %>"><%= order.author.username %></a>, <%= moment(order.createdAt).fromNow() %></h3>
+        </p>
+        <% if(currentUser && order.author.id.equals(currentUser._id) || currentUser && currentUser.isAdmin){ %>
+
+        <a class="form-button" href="/orders/<%= order._id %>/edit" style="text-decoration: none;">Edit</a>
+
+        <form action="/orders/<%= order._id %>?_method=DELETE" method="POST" class="delete-form">
+          <button class="form-button">Delete</button>
+        </form>
+
+        <% } %>
+        <div class="form-group"><span class="form-button" onclick="history.back();"><a>←Back</a></span></div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<% include ../partials/footer %>

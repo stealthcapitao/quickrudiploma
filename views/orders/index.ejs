@@ -1,0 +1,88 @@
+<% include ../partials/header %> 
+
+<div id="header-block">
+    <ul>
+    <li class="current_page_item" onclick="history.back();"><a>← back</a></li><h3 style="color: red;">ТОЛЬКО ДЛЯ ТЕСТА!</h3>
+    </ul>
+</div>
+
+<!-- Header featured -->
+<div id="header-featured">
+	<div id="banner-wrapper">
+		<div id="banner" class="container">
+			<h2><span class=""></span> Welcome To QuickRU!</h2>
+			<p>Лучший сайт для выполнения фриланс-задач</p>
+			<a href="/orders/new" class="button">Add New order</a>
+		</div>
+	</div>
+</div>
+
+<!-- Filter -->
+<div id="Filter">
+	<div id="filter-frame">
+		<ul>
+			<li><a href="#" accesskey="1" title="">Design</a></li>
+			<li><a href="#" accesskey="2" title="">Video\Audio</a></li>
+			<li><a href="#" accesskey="3" title="">Text\Localisation</a></li>
+			<li><a href="#" accesskey="4" title="">Photo 2D\3D Graphics</a></li>
+			<li><a href="#" accesskey="4" title="">Website Layout\Programming</a></li>
+			<li><a href="#" accesskey="4" title="">GameDev</a></li>
+		</ul>
+	</div>
+</div>
+     
+<!-- Wrapper featured -->
+    <div id="wrapper" class="margin-btm">
+        <% orders.forEach(function(order){ %>
+        
+            <!-- zakaz -->
+            <div id="featured-wrapper">
+                <div id="featured" class="margin-btm">
+                    
+        <!-- picture -->
+            <img class="img-box" src="<%= order.image %>">
+
+        <!-- name order -->
+                    <div class="caption"><h2><%= order.name %></h2></div>   
+                    
+        <!-- category -->
+                <div class="caption">
+                <p>Категория: <%= order.category %></p>
+                </div>
+
+        <!-- button -->
+                    <a href="/orders/<%= order._id %>" class="button">More Info</a>             
+            </div>
+        </div>
+        
+        <% }); %>
+    
+    </div>
+
+              <!-- FIX THAT!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+              <!-- FIX THAT!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+              <!-- FIX THAT!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+    <div class="wrapper-content" style="background-color: rgba(255, 255, 255, 0.55);text-align: center;">
+        <div class="container" style="background-color: rgba(255, 255, 255, 0.55);">
+            <h1>Слайдер</h1>
+        </div>
+    </div>
+              <!-- FIX THAT!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+              <!-- FIX THAT!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+              <!-- FIX THAT!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+    <div class="wrapper-content" style="background-color: rgba(255, 210, 88, 0.55);text-align: center;">
+        <div class="container" style="background-color: rgba(255, 210, 88, 0.55);">
+        <h2>Избранное</h2>
+        </div>
+    </div>
+
+              <!-- FIX THAT!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+              <!-- FIX THAT!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+              <!-- FIX THAT!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+    <div class="wrapper-content"style="background-color: rgba(255, 255, 255, 0.9); text-align: center;">
+        <div class="container" style="background-color: rgb(255, 255, 255);">
+            <h2>Инфо для фрилансеров и заказчиков</h2>
+        </div>
+    </div>
+
+<% include ../partials/footer %>

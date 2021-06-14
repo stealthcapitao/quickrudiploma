@@ -1,0 +1,66 @@
+
+<% include ../partials/header %>
+    
+<div class="wrapper-content">
+	<div class="container" >
+		<div class="form">
+
+
+    <div class="row">
+        <h1 style="text-align: center">Create a New order</h1>
+        <div >
+            <form action="/orders" method="POST">
+                <div class="form-group">
+                    <label for="name"></label>
+                    <input class="form-control" type="text" name="name" id="name" placeholder="Neme order">
+                </div>
+                <div class="form-group">
+                    <div class="d-flex justify-content-center">Choose category
+						<label class="currency">
+							<input name="category" class="currency__radio" type="radio" name="currency" id="bucks" value="design" checked>
+							<span class="img__radio img__radio_bucks"></span>
+						</label>
+						<label class="currency">
+							<input name="category" class="currency__radio" type="radio" name="currency" id="shawarma" value="video">
+							<span class="img__radio img__radio_shawarma"></span>
+						</label>
+						<label class="currency">
+							<input name="category" class="currency__radio" type="radio" name="currency" id="doshirak" value="text">
+							<span class="img__radio img__radio_doshirak"></span>
+						</label>
+						<label class="currency">
+							<input name="category" class="currency__radio" type="radio" name="currency" id="fix" value="photo">
+							<span class="img__radio img__radio_fix"></span>
+						</label>
+						<label class="currency">
+							<input name="category" class="currency__radio" type="radio" name="currency" id="fix2" value="progr">
+							<span class="img__radio img__radio_fix2"></span>
+						</label>
+						<label class="currency">
+							<input name="category" class="currency__radio" type="radio" name="currency" id="fix3" value="gamedev">
+							<span class="img__radio img__radio_fix3"></span>
+						</label>
+					</div>
+                </div>
+                <div class="form-group">
+                    <label for="image"></label>
+                    <input class="form-control" type="text" name="image" id="image" placeholder="https://source.unsplash.com/TCCCKgdFmBo">
+                </div>
+                <div class="form-group">
+                    <label for="cost"></label>
+                    <input class="form-control" type="number" name="cost" id="cost" placeholder="Cash in Rub:" step="0" min="0" required>
+                </div>
+                <div class="form-group">
+                    <label for="description"></label>
+                    <input class="form-control" type="text" name="description" id="description" placeholder="Description">
+                </div>
+                <div class="form-group">
+                    <button class="form-button">Create order</button>
+                </div>
+            </form>
+            <div class="form-group"><span class="form-button" onclick="history.back();"><a>←Back</a></span></div>
+        </div>
+        </div>
+    </div>
+<% include ../partials/footer %>
+

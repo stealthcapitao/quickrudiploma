@@ -1,0 +1,585 @@
+
+/* ============================================ */
+/* Main                                         */
+/* ============================================ */
+
+html, body
+{
+	
+	height: 100%;
+}
+
+body
+{
+	
+	transition: 0.2s;
+	margin: 0px;
+	padding: 0px;
+	background: #2b2b2b;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 11pt;
+	font-weight: 300;
+	color: #6c6c6c
+}
+
+h1, h2, h3
+{
+	margin: 0;
+	padding: 0;
+	font-weight: 600;
+	color: #454445;
+}
+
+p, ol, ul
+{
+	margin-top: 0;
+}
+
+ol, ul
+{
+	padding: 0;
+	list-style: none;
+}
+
+p
+{
+	line-height: 180%;
+}
+
+a:hover
+{
+	text-decoration: none;
+}
+
+.container
+{
+	margin: 0px auto;
+	width: 100%;
+}
+
+/* ============================================ */
+/* Button                                       */
+/* ============================================ */
+
+.button
+{
+  margin-bottom: 10px;
+	border: none;
+	display: inline-block;
+	padding: 1.3em 3em;
+	background: #3f3f3f;
+	-moz-transition: opacity 0.25s ease-in-out;
+	-webkit-transition: opacity 0.25s ease-in-out;
+	-o-transition: opacity 0.25s ease-in-out;
+	-ms-transition: opacity 0.25s ease-in-out;
+	transition: opacity 0.25s ease-in-out;
+	letter-spacing: 0.20em;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 600;
+	color: #FFF;
+}
+
+.button:hover
+{
+	background: #c29e2a;
+}
+
+
+.button-big
+{
+	padding: 1.6em 4em;
+	font-size: 1.4em;
+	font-weight: 900;
+}
+
+/* ============================================ */
+/* Header                                       */
+/* ============================================ */
+
+#header-wrapper
+{
+	background: #2b2b2b;
+}
+
+#header
+{
+	position: fixed;
+	height: 100px;
+	display: block;
+	background-color: #2b2b2b;
+}
+/* -----------------------------------------------------------------------fix red and position */
+#header-block
+{
+  height: 100px;
+  display: block;
+  background-color: rgba(0,0,0,0.15);
+}
+
+/* ============================================ */
+/* Header Logo                                  */
+/* ============================================ */
+
+#logo
+{
+	position: absolute;
+	top: 2em;
+	width: 100%;
+
+	
+}
+
+#logo h1
+{
+	display: inline-block;
+	font-size: 2.5em;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #dfbc4a;
+	padding-right: 0.50em;
+	border-right: 1px solid rgba(0,0,0,.1);
+}
+
+#logo span
+{
+	display: inline-block;
+	padding-right: .50em;
+	letter-spacing: 0.10em;
+	text-transform: uppercase;
+	font-size: 0.90em;
+}
+
+#logo a
+{
+	text-decoration: none;
+	color: #FFF;
+}
+
+
+
+#logo .fa:after
+{
+	position: absolute;
+	display: inline-block;
+	padding-right: 2em;
+}
+
+/* ============================================ */
+/* Header menu                                  */
+/* ============================================ */
+
+#menu
+{
+  display: inline-block;
+	position: absolute;
+	right: 0;
+	top: 1.6em;
+	margin-left: 256px;
+	
+	
+}
+
+#menu ul
+{
+  display: inline-block;
+  position: relative;
+}
+
+#menu li
+{
+  display: inline-block;
+	
+	text-align: center;
+}
+
+#menu li a, #menu li span
+{
+	display: inline-block;
+	margin-left: 1px;
+	padding: 1em 1.5em 0em 1.5em;
+	letter-spacing: 0.10em;
+	text-decoration: none;
+	font-size: 1em;
+	text-transform: uppercase;
+	outline: 0;
+	color: #FFF;
+}
+
+
+#menu .current_page_item a
+{
+	color: #dfbc4a;
+}
+
+/* ============================================ */
+/* Header featured                              */
+/* ============================================ */
+
+#header-featured
+{
+	padding: 10em 0em;
+	background-image: url(/img/banner.png);
+	background-position: center;
+	background-size: cover;
+}
+
+
+
+#banner
+{
+	overflow: hidden;
+	width: 100%;
+	text-align: center;
+	color: rgba(255,255,255,.7);
+	font-size: 1.5em;
+	position: 100%;
+}
+
+#banner a
+{
+	color: rgba(255,255,255,.9);
+}
+
+#banner h2
+{
+	padding-bottom: 0.50em;
+	font-weight: 400;
+	font-size: 3em;
+	color: #FFF;
+}
+
+#banner .button
+{
+	margin-top: 2em;
+}
+
+#banner strong
+{
+	color: #FFF;
+}
+
+#banner span
+{
+	display: block;
+	padding-top: 0.20em;
+	text-transform: uppercase;
+	font-size: 1.2em;
+	color: #A2A2A2;
+}
+/* ============================================ */
+/* Filter                                       */
+/* ============================================ */
+
+#Filter
+{	
+	text-align: center;
+    height: 50px;
+    padding-top: 10px;
+    padding-left: 25%;
+    top: 1.6em;
+    background-color: rgba(75, 74, 74, 0.596);
+}
+
+#filter ul
+{
+	display: inline-block;
+}
+
+#filter-frame li a, #filter-frame li span
+{
+	
+	padding: 0.1em 1.5em 0em 1.5em;
+	letter-spacing: 0.10em;
+	text-decoration: none;
+	outline: 0;
+	color: #FFF;
+	text-transform: none;
+	border-right: 1px solid rgba(255,255,255,.2) ;
+}
+
+#filter-frame li
+{
+	
+	float: left;
+	color: #FFF;
+}
+
+/* ============================================ */
+/* Wrapper featured                             */
+/* ============================================ */
+#wrapper
+{ 
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+}
+
+/* zakaz */
+#featured-wrapper
+{
+  width: 21em;
+  margin-top: 1em;
+  display: inline-block;
+	margin-left: 1em;
+}
+
+#featured
+{
+  background-color: rgba(0, 0, 0, 0.061);
+  border: 1px solid #dfbc4a;
+  border-radius: 4px;
+  text-align: center;
+  
+}
+
+.img-box
+{
+	margin-bottom: 5px;
+  	background-repeat: no-repeat;
+  	background-position: center;
+	display: inline-block;
+	width: 20em;
+	height: 20em;
+	background-color: rgba(0, 0, 0, 0.03);
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+
+.order-box
+{
+  min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.margin-btm
+{
+	overflow: hidden;
+}
+
+.wrapper-inner
+{
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper-content
+{
+    background-color: rgba(255, 255, 255, 1);
+	height: 100%;
+    box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+    padding-top: 5em;
+    padding-bottom: 5em;
+    border-bottom: 1px solid rgba(0,0,0,.3);
+    margin-bottom: 5em;
+    margin-top: 5em;
+}
+
+
+/* ============================================ */
+/* Wrapper                                      */
+/* ============================================ */
+
+.wrapper-title, h2 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.wrapper-title {
+    padding-top: 5em;
+	overflow: hidden;
+    margin-bottom: 5em;
+    padding-bottom: 5em;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+.box-wrapper {
+	padding-bottom: 5em;
+    margin: 0px auto;
+    width: 100%;
+} 
+
+
+/* ============================================ */
+/* Footer                                       */
+/* ============================================ */
+
+#copyright
+{
+	overflow: hidden;
+	padding: 1em 0em 3em 0em;
+	border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+#copyright p
+{
+	margin: 50px;
+	padding: 50px;
+	letter-spacing: 0.20em;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 0.80em;
+	color: rgba(255,255,255,0.3);
+}
+
+#copyright a
+{
+	text-decoration: none;
+	color: rgba(255,255,255,0.6);
+}
+
+
+/* ============================================ */
+/* Form	                                        */
+/* ============================================ */
+
+
+.form 
+{	
+
+	text-align: center;
+	margin-top: 10px;
+	margin: auto;
+	width: 35em; 
+	padding: 32px; 
+	border-radius: 10px; 
+	box-shadow: 0px 1px 100px rgba(0,0,0,0.1); 
+	font-family: sans-serif;
+	letter-spacing: 1px;
+}
+
+.form-button 
+{	
+	margin: 1em;
+	padding: 10px 20px;
+	border: none; 
+	background: #3f3f3f;
+	font-family: sans-serif;
+	letter-spacing: 1px;
+	font-size: 16xp;
+	color :#fff ; 
+	outline: none; 
+	cursor: pointer;
+	transition: 0.3s; 
+	
+}
+
+.form-button:hover
+{
+	background: #dfbc4a;
+}
+
+.form-group
+{
+	margin: 1em;
+}
+
+.form-control
+{
+	margin: 10px;
+	width: 100%;
+	padding: 0 0 10px 0;
+	border: none; 
+	border-bottom: 1px solid #e0e0e0;
+	background-color: transparent; 
+	outline: none;
+	transition: 0.3s;
+}
+
+.link 
+{
+	color: darkgoldenrod;
+	text-decoration: none;
+	
+}
+
+.row
+{
+	margin: 10px;
+}
+
+
+/* ============================================ */
+/* Form	                                        */
+/* ============================================ */
+#landing-header h1 {
+	color: #fff;
+  }
+
+#landing-header {
+	color: rgba(255,255,255,.6);
+	z-index: 1;
+	position: relative;
+	text-align: center;
+	padding-top: 40vh;
+  }
+
+.slideshow { 
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+  }
+  
+  .slideshow li { 
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	opacity: 0;
+	z-index: 0;
+	animation: imageAnimation 50s linear infinite; 
+  }
+  
+  .slideshow li:nth-child(1) 
+  { 
+	background-image: url(https://sun9-12.userapi.com/impg/MTKaJqb9A2Onw8XPuBmezLkvY9cJKQjqbd9lYQ/tDgaZ5hYWHE.jpg?size=1280x853&quality=96&sign=b3da83d625b1204649bcc291104d6ad7&type=album) 
+  }
+  .slideshow li:nth-child(2) { 
+	background-image: url(https://sun9-19.userapi.com/impg/9b0H8UkP2kPFrEprumqzU2Tu8bB5OOPUQ4auLg/maGLi9XkJrQ.jpg?size=1280x853&quality=96&sign=f8f9f813d88efbc96a13c820049910aa&type=album);
+	animation-delay: 10s; 
+  }
+  .slideshow li:nth-child(3) { 
+	background-image: url(https://sun9-26.userapi.com/impg/iLZIjZx1ANIRv-FmWoQcLBLS-hTW2V1gmgdz5w/SvZ3MauZY50.jpg?size=1280x853&quality=96&sign=2ac851fe0987e51cffc89ec3763b5fc3&type=album);
+	animation-delay: 20s; 
+  }
+  .slideshow li:nth-child(4) { 
+	background-image: url(https://sun9-19.userapi.com/impg/9b0H8UkP2kPFrEprumqzU2Tu8bB5OOPUQ4auLg/maGLi9XkJrQ.jpg?size=1280x853&quality=96&sign=f8f9f813d88efbc96a13c820049910aa&type=album);
+	animation-delay: 30s; 
+  }
+  .slideshow li:nth-child(5) { 
+	background-image: url(https://sun9-12.userapi.com/impg/MTKaJqb9A2Onw8XPuBmezLkvY9cJKQjqbd9lYQ/tDgaZ5hYWHE.jpg?size=1280x853&quality=96&sign=b3da83d625b1204649bcc291104d6ad7&type=album);
+	animation-delay: 40s; 
+  }
+  
+  @keyframes imageAnimation { 
+	0% { 
+	  opacity: 0; 
+	  animation-timing-function: ease-in;
+	}
+	10% {
+	  opacity: 1;
+	  animation-timing-function: ease-out;
+	}
+	20% {
+	  opacity: 1
+	}
+	30% {
+	  opacity: 0
+	}
+  }
+  
+  .no-cssanimations .slideshow li {
+	  opacity: 1;
+  }
